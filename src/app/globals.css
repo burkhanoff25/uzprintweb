@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --color-uz-bg: #f8fafc;
+  --color-uz-surface: #ffffff;
+  --color-uz-surface-border: #e2e8f0;
+}
+
+.dark {
+  --background: #0a0a0c;
+  --foreground: #f4f4f5;
+  --color-uz-bg: #0a0a0c;
+  --color-uz-surface: #121214;
+  --color-uz-surface-border: #27272a;
 }
 
 @theme inline {
+  --color-uz-cyan: #00AEEF;
+  --color-uz-magenta: #EC008C;
+  --color-uz-yellow: #FFC20E;
+  --color-uz-orange: #F7941D;
+  --color-uz-ink: #0a0a0c;
+  --color-uz-bg: var(--color-uz-bg);
+  --color-uz-surface: var(--color-uz-surface);
+  --color-uz-surface-border: var(--color-uz-surface-border);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-outfit);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Custom Utilities for Glow Effects */
+@layer utilities {
+  .glow-cyan {
+    box-shadow: 0 0 20px -5px rgba(0, 174, 239, 0.4);
+  }
+  .glow-magenta {
+    box-shadow: 0 0 20px -5px rgba(236, 0, 140, 0.4);
+  }
+  .glow-yellow {
+    box-shadow: 0 0 20px -5px rgba(255, 194, 14, 0.4);
+  }
+  .glow-orange {
+    box-shadow: 0 0 20px -5px rgba(247, 148, 29, 0.4);
+  }
+  
+  .text-glow-cyan {
+    text-shadow: 0 0 10px rgba(0, 174, 239, 0.5);
+  }
+  .text-glow-magenta {
+    text-shadow: 0 0 10px rgba(236, 0, 140, 0.5);
+  }
 }
