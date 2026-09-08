@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export default function RootLayout({
   children,
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="uz" suppressHydrationWarning className={`${outfit.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans bg-background text-foreground">
         <Providers>
+          <LoadingScreen />
           <Header />
           <main className="flex-1">
             {children}

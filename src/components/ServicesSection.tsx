@@ -76,25 +76,6 @@ export default function ServicesSection() {
             <Link 
               href="/services" 
               ref={(el) => { if (el) cardsRef.current[1] = el; }}
-              className="relative overflow-hidden rounded-3xl bg-[var(--color-uz-surface)] border border-[var(--color-uz-surface-border)] hover:border-[var(--color-uz-magenta)] transition-colors p-8 flex flex-col justify-end min-h-[300px] h-full block"
-            >
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-uz-magenta)]/20 rounded-full mix-blend-screen filter blur-[60px] transform translate-x-1/2 -translate-y-1/2 group-hover:bg-[var(--color-uz-magenta)]/30 transition-all"></div>
-              <div className="relative z-10 translate-z-[50px]">
-                <div className="w-12 h-12 rounded-xl bg-[var(--color-uz-magenta)]/20 flex items-center justify-center text-[var(--color-uz-magenta)] mb-6 glow-magenta">
-                  <Printer className="w-6 h-6" />
-                </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">Vizitkalar va Birkalar</h3>
-                <p className="text-foreground/60 mb-6">Premium qog'oz va dizaynlar.</p>
-                <span className="inline-flex px-4 py-2 rounded-full bg-[var(--color-uz-magenta)] text-[var(--color-uz-bg)] font-semibold text-sm">Batafsil</span>
-              </div>
-            </Link>
-          </TiltCard>
-
-          {/* Item 3 */}
-          <TiltCard className="group col-span-1">
-            <Link 
-              href="/services" 
-              ref={(el) => { if (el) cardsRef.current[2] = el; }}
               className="relative overflow-hidden rounded-3xl bg-[var(--color-uz-surface)] border border-[var(--color-uz-surface-border)] hover:border-[var(--color-uz-yellow)] transition-colors p-8 flex flex-col justify-end min-h-[300px] h-full block"
             >
               <div className="absolute bottom-0 right-0 w-64 h-64 bg-[var(--color-uz-yellow)]/20 rounded-full mix-blend-screen filter blur-[60px] transform translate-x-1/4 translate-y-1/4 group-hover:bg-[var(--color-uz-yellow)]/30 transition-all"></div>
@@ -105,6 +86,25 @@ export default function ServicesSection() {
                 <h3 className="text-2xl font-bold text-foreground mb-2">Qadoqlash va Paketlar</h3>
                 <p className="text-foreground/60 mb-6">Maxsus korobkalar va qog'oz paketlari.</p>
                 <span className="inline-flex px-4 py-2 rounded-full bg-[var(--color-uz-yellow)] text-[var(--color-uz-bg)] font-semibold text-sm">Batafsil</span>
+              </div>
+            </Link>
+          </TiltCard>
+
+          {/* Item 3 */}
+          <TiltCard className="group col-span-1">
+            <Link 
+              href="/services" 
+              ref={(el) => { if (el) cardsRef.current[2] = el; }}
+              className="relative overflow-hidden rounded-3xl bg-[var(--color-uz-surface)] border border-[var(--color-uz-surface-border)] hover:border-[var(--color-uz-magenta)] transition-colors p-8 flex flex-col justify-end min-h-[300px] h-full block"
+            >
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-uz-magenta)]/20 rounded-full mix-blend-screen filter blur-[60px] transform translate-x-1/2 -translate-y-1/2 group-hover:bg-[var(--color-uz-magenta)]/30 transition-all"></div>
+              <div className="relative z-10 translate-z-[50px]">
+                <div className="w-12 h-12 rounded-xl bg-[var(--color-uz-magenta)]/20 flex items-center justify-center text-[var(--color-uz-magenta)] mb-6 glow-magenta">
+                  <Printer className="w-6 h-6" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Vizitkalar va Birkalar</h3>
+                <p className="text-foreground/60 mb-6">Premium qog'oz va dizaynlar.</p>
+                <span className="inline-flex px-4 py-2 rounded-full bg-[var(--color-uz-magenta)] text-[var(--color-uz-bg)] font-semibold text-sm">Batafsil</span>
               </div>
             </Link>
           </TiltCard>

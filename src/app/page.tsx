@@ -117,6 +117,18 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+
+                <div className="flex items-start gap-6">
+                  <div className="w-14 h-14 rounded-2xl bg-[var(--color-uz-cyan)]/10 flex items-center justify-center shrink-0 text-[var(--color-uz-cyan)] border border-[var(--color-uz-cyan)]/20 glow-cyan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground/80 mb-2">Telegram</h3>
+                    <div className="flex flex-col gap-2">
+                      <a href="https://t.me/Abdullo_723" target="_blank" rel="noreferrer" className="text-foreground text-lg hover:text-[var(--color-uz-cyan)] transition-colors">@Abdullo_723</a>
+                    </div>
+                  </div>
+                </div>
                 
                 <div className="flex items-start gap-6">
                   <div className="w-14 h-14 rounded-2xl bg-[var(--color-uz-magenta)]/10 flex items-center justify-center shrink-0 text-[var(--color-uz-magenta)] border border-[var(--color-uz-magenta)]/20 glow-magenta">
