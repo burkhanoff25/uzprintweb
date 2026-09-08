@@ -8,7 +8,7 @@ export default function Logo({ className }: { className?: string }) {
       width="100%" 
       height="100%" 
       version="1.1" 
-      style={{shapeRendering: "geometricPrecision", textRendering: "geometricPrecision", imageRendering: "optimizeQuality", fillRule: "evenodd", clipRule: "evenodd"}} 
+      style={{shapeRendering: "geometricPrecision", textRendering: "geometricPrecision", fillRule: "evenodd", clipRule: "evenodd"}} 
       viewBox="0 0 14129.73 4768.72"
       className={className}
     >
