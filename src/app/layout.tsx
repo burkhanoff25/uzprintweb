@@ -9,7 +9,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://uz-print.uz'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://uz-print.uz'),
   title: {
     default: "Barcha turdagi poligrafiya xizmatlari | UzPrint Markazi",
     template: "%s | UzPrint",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "uz_UZ",
-    url: "https://uz-print.uz",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://uz-print.uz",
     siteName: "UzPrint Markazi",
   },
   verification: {

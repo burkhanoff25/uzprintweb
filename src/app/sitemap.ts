@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://uz-print.uz';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://uz-print.uz';
 
   // Core pages
   const routes = ['', '/about', '/contact', '/services', '/portfolio', '/order'].map(
