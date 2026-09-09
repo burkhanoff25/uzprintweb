@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     url: "https://uz-print.uz",
     siteName: "UzPrint Markazi",
   },
+  verification: {
+    google: "Nzt9q2HSXXeztDYy92liAAFLYc69zsviTWOJomVz_bc",
+  },
 };
 
 import Header from "@/components/Header";
