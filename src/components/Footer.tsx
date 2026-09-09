@@ -29,9 +29,9 @@ export default function Footer() {
           <div>
             <h3 className="text-foreground font-semibold mb-4 text-lg">Xizmatlar</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/services/vizitkalar" className="hover:text-[var(--color-uz-cyan)] transition-colors">Vizitkalar</Link></li>
-              <li><Link href="/services/bannerlar" className="hover:text-[var(--color-uz-magenta)] transition-colors">Bannerlar</Link></li>
-              <li><Link href="/services/bukletlar" className="hover:text-[var(--color-uz-yellow)] transition-colors">Broshyura va bukletlar</Link></li>
+              <li><Link href="/services/vizitka" className="hover:text-[var(--color-uz-cyan)] transition-colors">Vizitkalar</Link></li>
+              <li><Link href="/services/banner" className="hover:text-[var(--color-uz-magenta)] transition-colors">Bannerlar</Link></li>
+              <li><Link href="/services/flayer" className="hover:text-[var(--color-uz-yellow)] transition-colors">Broshyura va bukletlar</Link></li>
               <li><Link href="/services" className="hover:text-foreground transition-colors">Barcha xizmatlar &rarr;</Link></li>
             </ul>
           </div>

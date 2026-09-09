@@ -55,7 +55,7 @@ export default function ServicesSection() {
           {/* Item 1 */}
           <TiltCard className="group col-span-1 md:col-span-2">
             <Link 
-              href="/services" 
+              href="/services/banner" 
               ref={(el) => { if (el) cardsRef.current[0] = el; }}
               className="relative overflow-hidden rounded-3xl bg-[var(--color-uz-surface)] border border-[var(--color-uz-surface-border)] hover:border-[var(--color-uz-cyan)] transition-colors p-8 flex flex-col justify-end min-h-[300px] h-full block"
             >
@@ -93,7 +93,7 @@ export default function ServicesSection() {
           {/* Item 3 */}
           <TiltCard className="group col-span-1">
             <Link 
-              href="/services" 
+              href="/services/vizitka" 
               ref={(el) => { if (el) cardsRef.current[2] = el; }}
               className="relative overflow-hidden rounded-3xl bg-[var(--color-uz-surface)] border border-[var(--color-uz-surface-border)] hover:border-[var(--color-uz-magenta)] transition-colors p-8 flex flex-col justify-end min-h-[300px] h-full block"
             >
@@ -112,7 +112,7 @@ export default function ServicesSection() {
           {/* Item 4 */}
           <TiltCard className="group col-span-1 md:col-span-2">
             <Link 
-              href="/services" 
+              href="/services/flayer" 
               ref={(el) => { if (el) cardsRef.current[3] = el; }}
               className="relative overflow-hidden rounded-3xl bg-[var(--color-uz-surface)] border border-[var(--color-uz-surface-border)] hover:border-[var(--color-uz-orange)] transition-colors p-8 flex flex-col justify-end min-h-[300px] h-full block"
             >

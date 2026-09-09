@@ -25,9 +25,9 @@ export default function Home() {
               </div>
               
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
-                VIZUAL MUKAMMALIK <br className="hidden md:block"/>
+                Biznesda Birga <br className="hidden md:block"/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-uz-cyan)] via-[var(--color-uz-magenta)] to-[var(--color-uz-yellow)] drop-shadow-[0_0_15px_rgba(236,0,140,0.3)]">
-                  YARATAMIZ
+                  rivojlanamiz!
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-foreground/60 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
